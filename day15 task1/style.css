@@ -1,0 +1,28 @@
+#container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: salmon;
+    flex-direction: column;
+}
+ul{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li{
+    margin-top: 10px;
+}
+#text{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(55, 128, 212);
+    color: yellow;
+    margin: auto;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>task 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    
+     
+  </script>
+</head>
+
+<body>
+    <div id="container">
+        <ul>
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+            <li>Item -5</li>
+        </ul><br>
+        <textarea id="text"></textarea><br>
+        <button type="button">Add Item</button><br><br>
+    </div>
+    <script>
+            $(document).ready(function () {
+         
+         $("button").click(function(){
+             var text = $("#text").val();
+             if(text.length==0){
+                 alert('**Error');
+             }else{
+                 $("ul").append('<li>'+text+'</li>');
+             }
+             
+         });
+         $('ul').click(function(e){
+             e.target.remove();
+         });
+
+     });
+    </script>
+</body>
+
+</html>

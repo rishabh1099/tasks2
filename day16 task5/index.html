@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Movies</title>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Movies</h1>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li onclick="printTable()">All Movies</li>
+            <li onclick="remove()">Remove Movie</li>
+            <li onclick="form()">Add Movie</li>
+            <li onclick="Search()">Search Movies</li>
+        </ul>
+    </div>
+    <div id="contentDiv">
+  
+    </div>
+    <div id="formDiv">
+        <form id="form" enctype="multipart/form-data"><br>
+            <label>Movie Title :</label>
+            <input type="text" id="title" required><br>
+            <label>Duration :</label>
+            <input type="text" id="duration" required><br>
+            <label>Year :</label> 
+            <input type="number" id="year" required><br>
+            <label>Imd Rating :</label>
+            <input type="number" id="imd" required><br>
+            <label>Poster :</label>
+            <input type="file"  id="poster" required><br>
+            <input type="button" id="btn" value="submit" onclick="validate()"><br><br>
+        </form>
+    </div>
+    <div id="search-movie">
+          <div>
+            <label>Enter Title :</label>
+            <input type="text" id="tittle" oninput="search()"  required><br>
+            <input type="text" id="year" oninput="search()" style="display: none;" required><br>
+            <button onclick="searchMovie()">Click</button>
+          </div>
+            <div id="moviesearch">
+
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

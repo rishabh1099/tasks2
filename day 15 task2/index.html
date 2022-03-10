@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>task2</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 200px;
+            margin: auto;
+             margin-top: 200px;
+        }
+        h1{
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: blue;
+        }
+        #in{
+            
+            width: 300px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Form</h1><hr>
+        <input type="password" id="in"><input type="checkbox" id="check"><b>Show password</b>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#check").click(function(){
+               
+                if($("#check").is(':checked') == true){
+                    
+                    $("#in").attr('type', 'text');
+                }else{
+                    $("#in").attr('type', 'password');
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

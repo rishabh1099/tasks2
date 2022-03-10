@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <textarea id="h"></textarea>
+  <input type="submit" id="btn" value="click" onclick="fun()">
+  <div id="d"></div>
+    <script>
+       function fun(){
+        var text = document.getElementById('h').value;
+        document.getElementById('d').innerHTML+="<input type='radio' name='one' checked>"+text;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    padding : 0px;
+    margin : 0px;
+}
+#heading{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+#heading h1{
+    margin: auto;
+    font-size: 40px;
+    color: blue;
+}
+#navbar{
+    margin-top: 20px;
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(55, 133, 206);
+    height: 50px;
+}
+#navbar ul {
+    margin-left: auto;
+    margin-right: 20px;
+    line-height: 50px;
+}
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    color: beige;
+}
+#contentDiv{
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: aliceblue;
+    
+}
+#contentDiv>input{
+    
+    background-color: aliceblue;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#title{
+    height: 17px;
+}
+#search-movie{
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#search-movie>input{
+    
+    background-color: aliceblue;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#search-movie>label{
+    display: flex;
+    margin-left: 380px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#search-movie>button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+table{
+    width: 100%;
+    border: 1px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#first{
+    height: 50px;
+    background-color: rgb(216, 92, 92);
+}
+th>span{
+    color: aliceblue;
+}
+th, td{
+    border: 1px solid #8080ff;
+    text-align: center;
+}
+#formDiv{
+    width: 50%;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#form{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+#btn{
+    padding: 7px;
+    width: 70px;
+}
+#searchTbl{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+#searchTbl > tr >td > img{
+    width: 100%;
+    height: 100px;
+}

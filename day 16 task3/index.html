@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <br>
+        <h1>Registration Form - </h1>
+        <hr>
+        <form id="form" onsubmit="return validate()">
+            <div class="sub_content">
+                <div class="formm">
+                    <label for="fname">First Name :</label><br>
+                    <input type="text" id="fname" class="input">
+                    <span id="ename"></span>
+                </div>
+                <div class="formm">
+                    <label for="lname"> Last Name :</label><br>
+                    <input type="text" id="lname" class="input">
+                    <span id="elname"></span>
+                </div>
+                <div class="formm">
+                    <label for="email"> Email :</label><br>
+                    <input type="text" id="email" class="input">
+                    <span id="eemail"></span>
+                </div>
+                <div class="formm">
+                    <label for="password"> Password :</label><br>
+                    <input type="text" id="password" class="input">
+                    <span id="password"></span>
+                </div>
+                <div class="formm">
+                    <label for="Cpassword"> Confirm Password :</label><br>
+                    <input type="text" id="Cpassword" class="input">
+                    <span id="Cpassword"></span>
+                </div>
+
+                <div class="formm">
+                    <input type="submit" id="btn" value="Submit">
+                </div><br>
+            </div>
+        </form><br><br>
+    </div>
+    <script>
+
+        function validate() {
+             var name = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var name1 = /^[^\d]+$/;
+            var fname = $("#fname").val();
+            var lname = $("#lname").val();
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var cpass = $("#Cpassword").val();
+            if (fname == "") {
+                alert('please fill all fields');
+                return false;
+            } else if (name.test(fname) == true) {
+                alert('invalid name');
+                 return false;
+            } else if (name.test(lname) == true) {
+                alert('invalid last name');
+                return false;
+            } else if (name1.test(fname) == false) {
+                alert('invalid name');
+                return false;
+            } else if (name1.test(lname) == false) {
+                alert('invalid last name');
+                return false;
+            } else if (mail.test(email) == false) {
+                alert('invalid Email');
+                return false;
+            } else if (password.length < 6) {
+                alert('invalid password');
+                return false;
+            } else if (password !== cpass) {
+                alert('password doesnot match');
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

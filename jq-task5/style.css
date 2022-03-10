@@ -1,0 +1,68 @@
+body{
+    background: darkgray;
+    
+}
+table, tr,td,th{
+    border: 2px solid black;
+    text-align: center;
+    padding:10px;
+    border-collapse: collapse;
+}
+.main img{
+    width:150px;
+    height: 150px;
+}
+input[type="submit"], input[type="reset"]{
+    border: none;
+    border-radius: 15px;
+background-color: maroon;
+color: white;
+padding:8px 15px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color:black
+}
+.select{
+    background: linear-gradient(
+        45deg, black, transparent);
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+button{
+    padding:15px 25px;
+margin:0 40px;
+border-radius: 10px;
+background-color: black;
+color: white;
+border: none;
+}
+button:hover{
+    background-color: brown;
+}
+.main{
+    margin: auto;
+    width: 68%;
+}
+.form-add{
+    margin: auto;
+    width: 50%;
+}
+.form-add table, .form-add td, .form-add tr, .form-add th{
+    border: none;
+}
+
+.main tr:nth-child(even){
+    background: lightgray;
+}
+.main tr:nth-child(odd){
+    background-color: white;
+}
+.main tr:nth-child(1){
+    background: brown;
+    color: white;
+    
+}
